@@ -1,0 +1,22 @@
+{
+  "name": "learn_npm",
+  "version": "1.0.0",
+  "description": "Test file package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
+  },
+  "keywords": [
+    "laerna",
+    "npm",
+    "node"
+  ],
+  "author": "Jakub Wisniewski",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "http-server": "^0.11.1",
+    "stat-mode": "^0.2.2"
+  }
+}
