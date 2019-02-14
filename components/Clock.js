@@ -1,5 +1,10 @@
 class Clock extends React.Component {
 
+  deleteHistory = () => {
+    document.getElementById('list').innerHTML=''; 
+    document.getElementById('delHistory').classList.add("hide");
+  }
+
   render() {
     return (
       <div className="box">
@@ -9,7 +14,7 @@ class Clock extends React.Component {
         </div>
       </div>  
       <ol className='list' id='list'></ol>
-      <a href="#" className="button hide" id="delHistory">Delete history</a> 
+      <a href="#" className="button hide" id="delHistory" onClick={this.deleteHistory}>Delete history</a> 
       </div>
      )
   }
